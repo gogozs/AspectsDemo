@@ -1,1 +1,3 @@
-pod 'Aspects'
+target 'AspectsDemo' do
+	pod 'Aspects'
+end
