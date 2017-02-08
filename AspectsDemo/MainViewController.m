@@ -20,29 +20,11 @@
 
 @implementation MainViewController
 
-#define PAGE_IMP_HEALTH @"page imp - health profile"
-#define BTN_CLK_HELP_EXPORT @"button click - export report"
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-//    self.tableView.clipsToBounds = NO;
     self.tableView.contentInset = UIEdgeInsetsMake(300, 0, 0, 0);
-
-//    [self aspect_hookSelector:@selector(viewDidAppear:)
-//                  withOptions:AspectPositionAfter
-//                   usingBlock:^(id<AspectInfo> aspectInfo){
-//                       NSLog(@"view did appear: %@", aspectInfo);
-//                   }
-//                        error:NULL];
-//    
-//    [self aspect_hookSelector:@selector(buttonClicked:)
-//                  withOptions:AspectPositionAfter
-//                   usingBlock:^(id<AspectInfo> aspectInfo, id sender) {
-//                       NSLog(@"button clicked: %@ \n %@", aspectInfo, sender);
-//                   }
-//                        error:NULL];
 }
 
 
@@ -78,7 +60,6 @@
     UIColor *color = [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
     
     cell.containerView.backgroundColor = color;
-//    cell.textLabel.text = [NSString stringWithFormat:@"%ld %ld", indexPath.section, indexPath.row];
     
     return cell;
 }
@@ -104,7 +85,6 @@
 
 - (IBAction)buttonClicked:(id)sender
 {
-//    NSLog(@"Button %ld Clicked", [sender tag]);
 }
 
 
